@@ -1,0 +1,27 @@
+open xammp and start first two
+
+then go to project folder folder location == C:\xampp\htdocs\laravel\IMS\tank-app
+
+then right click and select git bash here or cmd
+
+run php artisan serve
+
+
+
+open ngrok then 1st past this auth token:
+ngrok config add-authtoken 2kK0LhrJYJthO7HzcSmBiaWBMD6_6KViWrB2dFqJf8P8fz347
+
+ngrok 2nd step: 
+ngrok http 8000
+
+
+
+
+
+
+
+
+
+
+
+

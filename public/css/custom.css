@@ -1,0 +1,363 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#app {
+    min-height: 100%;
+    position: relative;
+}
+
+.active {
+    background-color: green !important;
+}
+
+.main {
+    padding: 10px;
+    padding-bottom: 60px; /* Height of the footer */
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+}
+
+/* tank position show modal heder */
+.showmodaltitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    #app {
+        position: static;
+    }
+    .footer {
+        position: static;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* Height of the footer */
+    }
+}
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.form-control {
+    background-color: white !important;
+}
+.select2-selection__arrow b {
+    display: none !important;
+}
+
+.select2.select2-container {
+    /* width: 100% !important; */
+}
+
+.select2.select2-container .select2-selection {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 34px;
+    /* margin-bottom: 15px; */
+    outline: none !important;
+    transition: all 0.15s ease-in-out;
+}
+
+.select2.select2-container .select2-selection .select2-selection__rendered {
+    color: #333;
+    line-height: 32px;
+    padding-right: 33px;
+}
+
+.select2.select2-container .select2-selection .select2-selection__arrow {
+    background: none;
+    border-left: none;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    height: 32px;
+    width: 33px;
+}
+
+.select2.select2-container.select2-container--open
+    .select2-selection.select2-selection--single {
+    background: #f8f8f8;
+}
+
+.select2.select2-container.select2-container--open
+    .select2-selection.select2-selection--single
+    .select2-selection__arrow {
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+}
+
+.select2.select2-container.select2-container--open
+    .select2-selection.select2-selection--multiple {
+    border: 1px solid #34495e;
+}
+
+.select2.select2-container .select2-selection--multiple {
+    height: auto;
+    min-height: 34px;
+}
+
+.select2.select2-container
+    .select2-selection--multiple
+    .select2-search--inline
+    .select2-search__field {
+    margin-top: 0;
+    height: 32px;
+}
+
+.select2.select2-container
+    .select2-selection--multiple
+    .select2-selection__rendered {
+    display: block;
+    padding: 0 4px;
+    line-height: 29px;
+}
+
+.select2.select2-container
+    .select2-selection--multiple
+    .select2-selection__choice {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* margin: 4px 4px 0 0; */
+    padding: 0 6px 0 22px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    position: relative;
+}
+
+.select2.select2-container
+    .select2-selection--multiple
+    .select2-selection__choice
+    .select2-selection__choice__remove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    margin: 0;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.select2-container .select2-dropdown {
+    background: transparent;
+    border: none;
+    margin-top: -5px;
+}
+
+.select2-container .select2-dropdown .select2-search {
+    padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-search input {
+    outline: none !important;
+    border: 1px solid #34495e !important;
+    border-bottom: none !important;
+    padding: 4px 6px !important;
+}
+
+.select2-container .select2-dropdown .select2-results {
+    padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-results ul {
+    background: #fff;
+    border: 1px solid #34495e;
+}
+
+.select2-container
+    .select2-dropdown
+    .select2-results
+    ul
+    .select2-results__option--highlighted[aria-selected] {
+    background-color: #3498db;
+}
+
+/* center div style */
+
+.center_div {
+    margin: auto;
+    width: 40%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.center_div_position {
+    margin: auto;
+    width: 75%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+/* readonly input color */
+
+/* input[readonly] {
+    background-color: transparent;
+    font-size: 1em;
+} */
+input[readonly] {
+    background-color: rgb(235, 235, 228) !important;
+    color: rgb(84, 84, 84);
+}
+
+/* input:disabled {
+    background-color: #cccccc !important;
+} */
+
+select:disabled {
+    background-color: rgb(235, 235, 228) !important;
+    color: rgb(84, 84, 84);
+}
+input:disabled {
+    background-color: rgb(235, 235, 228) !important;
+    color: rgb(84, 84, 84);
+}
+
+/* select[readonly].select2-hidden-accessible + .select2-container {
+    pointer-events: none;
+    touch-action: none;
+    opacity: 0.6;
+    cursor: no-drop;
+
+    select[readonly].select2-container--default .select2-selection--single {
+        background-color: rgb(212, 212, 13) !important;
+        color: rgb(84, 84, 84) !important;
+    }
+} */
+select[readonly].select2-hidden-accessible + .select2-container {
+    pointer-events: none;
+    touch-action: none;
+    opacity: 0.6;
+    cursor: no-drop;
+}
+
+select[readonly].select2-hidden-accessible
+    + .select2-container.select2-container--default
+    .select2-selection--single {
+    background-color: rgb(235, 235, 228) !important;
+    color: rgb(84, 84, 84);
+}
+
+.custom-logo {
+    display: inline-block;
+    height: 50px;
+}
+.nav-link {
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+/* roboto font css */
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+} */
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* visit icon design */
+.visit_icon {
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.visit_icon_div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
